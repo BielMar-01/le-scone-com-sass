@@ -52,24 +52,22 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: blue;
-}
-.container::after, .container::before {
-  content: "";
-  display: table;
-  clear: both;
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-.grid-3 {
-  width: calc(25% - 20px);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+p {
+  color: blue;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  p {
+    color: pink;
+  }
+}
+@media screen and (max-width: 759px) {
+  p {
+    color: aqua;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
