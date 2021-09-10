@@ -1,4 +1,4 @@
-//Mixin de media-querie {
+// Mixin de media-querie {
 @mixin d($size){
   @if $size == l {
     @media screen and (min-width: $l-device) {
