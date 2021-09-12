@@ -49,7 +49,7 @@
 }
 
 // Mixin de clearfix
-@mixin clerfix {
+@mixin clearfix {
   &::after, &::before {
     content: '';
     display: table;
@@ -66,12 +66,27 @@
   }
   @include d(s) {
     max-width: $s-device;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  @include clerfix;
+  @include clearfix;
 }
 
 .container {
   @include container;
+}
+
+@mixin row {
+  position: relative;
+  margin-left: -$gutter / 2;
+  margin-right: -$gutter / 2;
+  @include d(s) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  @include clearfix;
+}
+
+.row {
+  @include row;
 }
