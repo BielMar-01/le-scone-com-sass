@@ -1,8 +1,10 @@
-// Geral
-@import 'base/reset';
 @import 'global/variaveis';
-@import 'global/mixins';
+
+@import 'base/reset';
 @import 'base/grid';
 
 
-
+div {
+font-family: 'Aref Ruqaa', serif;
+font-family: 'PT Mono', monospace;
+}
