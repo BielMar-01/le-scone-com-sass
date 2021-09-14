@@ -1,7 +1,3 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -218,9 +214,10 @@ table {
   clear: both;
 }
 
-div {
-  font-family: "Aref Ruqaa", serif;
-  font-family: "PT Mono", monospace;
+body {
+  background: #edece4;
+  border: 10px solid #cbc6b9;
+  color: #2a2426;
 }
 
 /*# sourceMappingURL=style.css.map */

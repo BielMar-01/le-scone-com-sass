@@ -1,10 +1,6 @@
-@import 'global/variaveis';
-
 @import 'base/reset';
 @import 'base/grid';
+@import 'global/variaveis-e-mixins';
+@import "global/geral";
 
 
-div {
-font-family: 'Aref Ruqaa', serif;
-font-family: 'PT Mono', monospace;
-}
